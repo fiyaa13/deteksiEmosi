@@ -1,0 +1,22 @@
+WEBSITE PENDETEKSI EKSPRESI — STARTER PROYEK
+============================================
+
+Yang boleh kalian ubah (cari tanda ✏️):
+  1. index.html  -> judul <title>, judul <h1>, nama kelompok
+  2. style.css   -> warna tema di bagian :root
+  3. script.js   -> teks dan emoji di objek TANGGAPAN dan TANPA_WAJAH
+
+Jangan ubah folder lib/ dan models/ (berisi pustaka dan model AI).
+
+Kenapa website ini tidak jalan kalau index.html dibuka langsung?
+  - Browser memblokir pengambilan file model AI dari alamat file://
+  - Kamera hanya diizinkan di halaman HTTPS atau localhost
+  Solusinya: deploy ke Netlify!
+
+Cara deploy:
+  1. Login ke app.netlify.com
+  2. Buka halaman deploy manual (Netlify Drop)
+  3. Seret SELURUH folder ini ke area unggah
+  4. Salin URL .netlify.app, buka di HP, klik "Nyalakan Kamera"
+
+Model AI: face-api (github.com/vladmandic/face-api), lisensi MIT.

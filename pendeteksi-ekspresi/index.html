@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ UBAH DI SINI: judul yang muncul di tab browser -->
+  <title>Pendeteksi Ekspresi | Annisais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- ✏️ UBAH DI SINI: nama website dan nama kelompok -->
+    <h1>🤖 Pendeteksi Ekspresi</h1>
+    <p class="subjudul">Dibuat oleh annisa — XII RPL</p>
+  </header>
+
+  <main>
+    <section class="kamera">
+      <div class="bingkai">
+        <video id="video" autoplay muted playsinline></video>
+        <div id="placeholder" class="placeholder">Kamera belum aktif</div>
+      </div>
+      <button id="tombolMulai">📷 Nyalakan Kamera</button>
+      <p id="status" class="status">Memuat model AI...</p>
+    </section>
+
+    <section class="hasil">
+      <div id="emoji" class="emoji">🙂</div>
+      <h2 id="namaEmosi">Belum ada wajah</h2>
+      <p id="tanggapan" class="tanggapan">Nyalakan kamera lalu tunjukkan ekspresimu!</p>
+
+      <h3>Seberapa yakin AI?</h3>
+      <div id="daftarPeluang" class="peluang"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Model AI pre-trained: face-api (deteksi wajah + pengenalan ekspresi). Semua proses berjalan di browser, video tidak dikirim ke mana pun.</p>
+  </footer>
+
+  <script src="lib/face-api.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
